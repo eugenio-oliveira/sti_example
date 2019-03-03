@@ -1,4 +1,6 @@
 class Student < User
+
+  has_many :subjects
  
   before_save :set_role
 
