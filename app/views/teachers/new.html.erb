@@ -1,0 +1,19 @@
+<h1>New Teacher</h1>
+<%= form_for @teacher do |f| %>
+<div>
+  <%= f.label "email" %><br>
+  <%= f.text_field :email %>
+</div>
+<div>
+  <%= f.label :password %><br>
+  <%= f.text_field :password %>
+</div>
+<div>
+  <%= f.label :password_confirmation %><br>
+  <%= f.text_field :password_confirmation %>
+</div>
+<div>
+  <%= f.hidden_field :role, value: :teacher %>  
+</div>
+<%= f.submit %>
+<% end %>
